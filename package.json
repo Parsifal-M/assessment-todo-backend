@@ -18,15 +18,18 @@
   },
   "homepage": "https://github.com/Parsifal-M/assessment-todo#readme",
   "dependencies": {
+    "axios": "^1.3.4",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "pg": "^8.9.0"
+    "pg": "^8.9.0",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
-    "@types/pg": "^8.6.6"
+    "@types/pg": "^8.6.6",
+    "@types/react": "^18.0.28"
   }
 }
