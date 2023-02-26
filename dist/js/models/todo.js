@@ -18,7 +18,7 @@ Todo.init({
         type: sequelize_1.DataTypes.STRING,
         allowNull: false,
     },
-    status: {
+    completed: {
         type: sequelize_1.DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: false,

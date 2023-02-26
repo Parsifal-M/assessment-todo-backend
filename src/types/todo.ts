@@ -4,7 +4,7 @@ export interface ITodo {
   id: number;
   title: string;
   description: string;
-  status: boolean;
+  completed: boolean;
   createdAt: Date;
   updatedAt: Date;
 }
