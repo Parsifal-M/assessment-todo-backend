@@ -14,14 +14,14 @@ export const getTodos = async (req: Request, res: Response): Promise<void> => {
 
 export const addTodo = async (req: Request, res: Response): Promise<void> => {
     try {
-        const body = req.body as Pick<ITodo, 'title' | 'description' | 'status'>;
+        const body = req.body as Pick<ITodo, 'title' | 'description' | 'status' | 'id'>;
         const todo: ITodo = {
             title: body.title,
             description: body.description,
             status: body.status,
             createdAt: new Date(),
             updatedAt: new Date(),
-            id: 0
+            id: body.id,
         };
         const newTodo: Todo = await Todo.create(todo);
         const newTodoJSON: ITodo = newTodo.toJSON() as ITodo;

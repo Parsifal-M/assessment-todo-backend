@@ -34,7 +34,7 @@ const addTodo = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             status: body.status,
             createdAt: new Date(),
             updatedAt: new Date(),
-            id: 0
+            id: body.id,
         };
         const newTodo = yield todo_1.default.create(todo);
         const newTodoJSON = newTodo.toJSON();
